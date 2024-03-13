@@ -14,7 +14,7 @@ void setup() {
   E = 0 ; E1 = 0; E2 = 0;  
   Output=0; LastOutput=0;  
   T=0.01;  
-  Kp=1; Kd= 0 ; Ki=0.01;  
+  Kp=1.45; Kd= 0 ; Ki=0.01;  
   Serial.begin(9600);  
    attachInterrupt(0,Demxung,FALLING);  
    Timer1.initialize(10000);  
@@ -22,8 +22,7 @@ void setup() {
    }
    void loop() {  
     int i;  
-    for( i= 0;i<10; i++);  
-    delay(1);  
+  
     Serial.println(tocdo);
     }
     void Demxung() { 
